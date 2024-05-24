@@ -6,13 +6,14 @@
 //
 
 import Foundation
-
+import SwiftUI
 enum ChatOwner{
     case user, gpt
 }
 
 struct ChatModel:Identifiable{
     var id: UUID = .init()
-    var message:String
+    var message:LocalizedStringKey
     var owener: ChatOwner
 }
+

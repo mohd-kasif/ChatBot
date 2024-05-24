@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ChatView: View {
     @StateObject var vm=ChatViewModel()
-    @State var message:String
     var body: some View {
         ScrollView{
             ForEach(vm.chatModel){item in
@@ -21,9 +20,12 @@ struct ChatView: View {
             }
         }
         HStack{
-            TextField("Enter Prompt", text: $message, axis: .vertical)
+            TextField("Enter Prompt", text: $vm.message, axis: .vertical)
             Button(action: {
-                vm.apikey()
+                Task{
+                    await vm.sendMessage()
+                }
+             
             }, label: {
                 Image(systemName: "paperplane.fill")
             })
@@ -50,7 +52,7 @@ struct ChatView: View {
         }
     }
 }
-
-#Preview {
-    ChatView(message: "")
-}
+//
+//#Preview {
+//    ChatView()
+//}

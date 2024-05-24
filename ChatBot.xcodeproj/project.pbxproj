@@ -16,6 +16,7 @@
 		4B951DFA2C005C8D00FB56CD /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */; };
 		4B951DFC2C005CF800FB56CD /* GenerateKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DFB2C005CF800FB56CD /* GenerateKey.plist */; };
 		4B951DFE2C005D1D00FB56CD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DFD2C005D1D00FB56CD /* API.swift */; };
+		4B951E012C005ECD00FB56CD /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B951E002C005ECD00FB56CD /* GoogleGenerativeAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B951E012C005ECD00FB56CD /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +110,9 @@
 			dependencies = (
 			);
 			name = ChatBot;
+			packageProductDependencies = (
+				4B951E002C005ECD00FB56CD /* GoogleGenerativeAI */,
+			);
 			productName = ChatBot;
 			productReference = 4B951DE22C005A0D00FB56CD /* ChatBot.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 4B951DD92C005A0D00FB56CD;
+			packageReferences = (
+				4B951DFF2C005ECD00FB56CD /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = 4B951DE32C005A0D00FB56CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -387,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B951DFF2C005ECD00FB56CD /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B951E002C005ECD00FB56CD /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B951DFF2C005ECD00FB56CD /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B951DDA2C005A0D00FB56CD /* Project object */;
 }
