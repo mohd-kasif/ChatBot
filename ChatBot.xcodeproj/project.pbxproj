@@ -11,6 +11,11 @@
 		4B951DE82C005A0D00FB56CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DE72C005A0D00FB56CD /* ContentView.swift */; };
 		4B951DEA2C005A0F00FB56CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DE92C005A0F00FB56CD /* Assets.xcassets */; };
 		4B951DEE2C005A0F00FB56CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DED2C005A0F00FB56CD /* Preview Assets.xcassets */; };
+		4B951DF62C005C4F00FB56CD /* ChatModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DF52C005C4F00FB56CD /* ChatModle.swift */; };
+		4B951DF82C005C6500FB56CD /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DF72C005C6500FB56CD /* ChatView.swift */; };
+		4B951DFA2C005C8D00FB56CD /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */; };
+		4B951DFC2C005CF800FB56CD /* GenerateKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DFB2C005CF800FB56CD /* GenerateKey.plist */; };
+		4B951DFE2C005D1D00FB56CD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DFD2C005D1D00FB56CD /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		4B951DE92C005A0F00FB56CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B951DEB2C005A0F00FB56CD /* ChatBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatBot.entitlements; sourceTree = "<group>"; };
 		4B951DED2C005A0F00FB56CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B951DF52C005C4F00FB56CD /* ChatModle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModle.swift; sourceTree = "<group>"; };
+		4B951DF72C005C6500FB56CD /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		4B951DFB2C005CF800FB56CD /* GenerateKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GenerateKey.plist; sourceTree = "<group>"; };
+		4B951DFD2C005D1D00FB56CD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +62,13 @@
 		4B951DE42C005A0D00FB56CD /* ChatBot */ = {
 			isa = PBXGroup;
 			children = (
+				4B951DF42C005C3F00FB56CD /* Modules */,
 				4B951DE52C005A0D00FB56CD /* ChatBotApp.swift */,
 				4B951DE72C005A0D00FB56CD /* ContentView.swift */,
 				4B951DE92C005A0F00FB56CD /* Assets.xcassets */,
 				4B951DEB2C005A0F00FB56CD /* ChatBot.entitlements */,
 				4B951DEC2C005A0F00FB56CD /* Preview Content */,
+				4B951DFB2C005CF800FB56CD /* GenerateKey.plist */,
 			);
 			path = ChatBot;
 			sourceTree = "<group>";
@@ -67,6 +79,17 @@
 				4B951DED2C005A0F00FB56CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B951DF42C005C3F00FB56CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4B951DF52C005C4F00FB56CD /* ChatModle.swift */,
+				4B951DF72C005C6500FB56CD /* ChatView.swift */,
+				4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */,
+				4B951DFD2C005D1D00FB56CD /* API.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B951DFC2C005CF800FB56CD /* GenerateKey.plist in Resources */,
 				4B951DEE2C005A0F00FB56CD /* Preview Assets.xcassets in Resources */,
 				4B951DEA2C005A0F00FB56CD /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B951DF82C005C6500FB56CD /* ChatView.swift in Sources */,
 				4B951DE82C005A0D00FB56CD /* ContentView.swift in Sources */,
+				4B951DF62C005C4F00FB56CD /* ChatModle.swift in Sources */,
+				4B951DFA2C005C8D00FB56CD /* ChatViewModel.swift in Sources */,
+				4B951DFE2C005D1D00FB56CD /* API.swift in Sources */,
 				4B951DE62C005A0D00FB56CD /* ChatBotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
