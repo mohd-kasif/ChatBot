@@ -17,6 +17,8 @@
 		4B951DFC2C005CF800FB56CD /* GenerateKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DFB2C005CF800FB56CD /* GenerateKey.plist */; };
 		4B951DFE2C005D1D00FB56CD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DFD2C005D1D00FB56CD /* API.swift */; };
 		4B951E012C005ECD00FB56CD /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B951E002C005ECD00FB56CD /* GoogleGenerativeAI */; };
+		4B951E032C01B45900FB56CD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951E022C01B45900FB56CD /* Extensions.swift */; };
+		4B951E052C01B46B00FB56CD /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951E042C01B46B00FB56CD /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		4B951DFB2C005CF800FB56CD /* GenerateKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GenerateKey.plist; sourceTree = "<group>"; };
 		4B951DFD2C005D1D00FB56CD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4B951E022C01B45900FB56CD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4B951E042C01B46B00FB56CD /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				4B951DF72C005C6500FB56CD /* ChatView.swift */,
 				4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */,
 				4B951DFD2C005D1D00FB56CD /* API.swift */,
+				4B951E022C01B45900FB56CD /* Extensions.swift */,
+				4B951E042C01B46B00FB56CD /* Utility.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -175,8 +181,10 @@
 				4B951DE82C005A0D00FB56CD /* ContentView.swift in Sources */,
 				4B951DF62C005C4F00FB56CD /* ChatModle.swift in Sources */,
 				4B951DFA2C005C8D00FB56CD /* ChatViewModel.swift in Sources */,
+				4B951E052C01B46B00FB56CD /* Utility.swift in Sources */,
 				4B951DFE2C005D1D00FB56CD /* API.swift in Sources */,
 				4B951DE62C005A0D00FB56CD /* ChatBotApp.swift in Sources */,
+				4B951E032C01B45900FB56CD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

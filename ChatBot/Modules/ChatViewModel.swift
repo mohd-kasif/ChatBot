@@ -12,6 +12,8 @@ import SwiftUI
 class ChatViewModel:ObservableObject{
     @Published var chatModel:[ChatModel]=[]
     @Published var isLoading=false
+    @Published var errorMessage:String=""
+    @Published var showingAlert:Bool=false
     
     let model=GenerativeModel(name: "gemini-pro", apiKey: API.apiKey)
     @Published var message:String=""
@@ -23,15 +25,17 @@ class ChatViewModel:ObservableObject{
         do{
             let response = try await model.generateContent(message)
             if let text = response.text{
-                self.isLoading=false
                 let localizedText=LocalizedStringKey(text)
                 print(text,"text response")
                 let model=ChatModel(message: localizedText, owener: .gpt)
                 self.chatModel.append(model)
                 message=""
+                self.isLoading=false
             }
         }
         catch {
+            showingAlert=true
+            self.errorMessage=error.localizedDescription
             print(error.localizedDescription,"error from api")
         }
  
