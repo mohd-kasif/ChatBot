@@ -1,4 +1,4 @@
-# Gemini Chat Bot
+# Gemini AI Chat Bot
 
 Welcome to the Gemini Chat Bot project! This repository contains a project that utilizes the Gemini API to generate responses to questions.
 
