@@ -10,9 +10,19 @@ import SwiftUI
 
 struct ChatView: View {
     @StateObject var vm=ChatViewModel()
+    init(){
+//        for familyName in UIFont.familyNames{
+//            print(familyName)
+//            for fontName in UIFont.fontNames(forFamilyName: familyName){
+//                print("-----\(fontName)")
+//            }
+//        }
+    }
     var body: some View {
         VStack{
             Text("Ask me anything")
+                .fontWeight(.bold)
+                .font(.custom("Avenir-Medium", size: 24))
                 
         }
         ScrollViewReader{proxy in
@@ -22,11 +32,6 @@ struct ChatView: View {
                         chatBox(item)
                             .padding(5)
                     }
-//                    if vm.isLoading{
-//                        ProgressView()
-//                            .frame(width: 100,height: 50)
-//                            .foregroundColor(.blue)
-//                    }
                     Color.clear
                         .frame(height: 1)
                         .id("bottom")
@@ -53,11 +58,11 @@ struct ChatView: View {
                 VStack{
                     Image(systemName: "paperplane.fill")
                         .resizable()
-                        .foregroundColor(vm.isLoading ? .gray : .white)
+                        .foregroundColor(.white)
                         .frame(width:30, height: 30)
                 }
                 .frame(width: 50, height: 50)
-                .background(vm.isLoading ? .gray : .blue)
+                .background(vm.isLoading ? Color.assistantBackground : .blue)
                 .cornerRadius(6)
              
                
@@ -76,13 +81,14 @@ struct ChatView: View {
                     .padding()
                     .background(.blue)
                     .foregroundColor(.white)
-//                    .cornerRadius(10)
                     .cornerRadius(5, corners: [.topLeft,.topRight,.bottomLeft])
+                    .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
             } else {
                 Text(model.message)
                     .padding()
-                    .background(.green)
+                    .background(Color.assistantBackground)
                     .cornerRadius(5, corners: [.topRight, .bottomRight,.bottomLeft])
+                    .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
                 Spacer(minLength: 30)
             }
         }
@@ -94,25 +100,6 @@ struct ChatView: View {
 //}
 
 
-struct NeumorphicStyleTextField: View {
-    var textField: TextField<Text>
-    var body: some View {
-        HStack {
-            textField
-            }
-            .padding()
-            .foregroundColor(.black)
-            .background(Color.background)
-            .cornerRadius(4)
-            .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
-            .shadow(color: Color.lightShadow, radius: 3, x: -2, y: -2)
 
-        }
-}
 
-extension Color {
-    static let lightShadow = Color(red: 255 / 255, green: 255 / 255, blue: 255 / 255)
-    static let darkShadow = Color(red: 163 / 255, green: 177 / 255, blue: 198 / 255)
-    static let background = Color(red: 224 / 255, green: 229 / 255, blue: 236 / 255)
-    static let neumorphictextColor = Color(red: 132 / 255, green: 132 / 255, blue: 132 / 255)
-}
+
