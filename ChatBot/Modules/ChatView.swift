@@ -77,14 +77,17 @@ struct ChatView: View {
         HStack{
             if model.owener == .user{
                 Spacer()
-                Text(model.message)
+                Text(model.localizedKey)
                     .padding()
                     .background(.blue)
                     .foregroundColor(.white)
                     .cornerRadius(5, corners: [.topLeft,.topRight,.bottomLeft])
                     .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
             } else {
-                Text(model.message)
+                if vm.isThinking{
+                    
+                }
+                Text(model.localizedKey)
                     .padding()
                     .background(Color.assistantBackground)
                     .cornerRadius(5, corners: [.topRight, .bottomRight,.bottomLeft])

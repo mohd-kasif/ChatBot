@@ -13,7 +13,11 @@ enum ChatOwner{
 
 struct ChatModel:Identifiable{
     var id: UUID = .init()
-    var message:LocalizedStringKey
+    var message:String
     var owener: ChatOwner
+    
+    var localizedKey:LocalizedStringKey{
+         LocalizedStringKey(message)
+    }
 }
 
