@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B05D22C2C084B0C00CA4ED6 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B05D22B2C084B0C00CA4ED6 /* ShimmerEffect.swift */; };
 		4B951DE62C005A0D00FB56CD /* ChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DE52C005A0D00FB56CD /* ChatBotApp.swift */; };
 		4B951DE82C005A0D00FB56CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DE72C005A0D00FB56CD /* ContentView.swift */; };
 		4B951DEA2C005A0F00FB56CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DE92C005A0F00FB56CD /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B05D22B2C084B0C00CA4ED6 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		4B951DE22C005A0D00FB56CD /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B951DE52C005A0D00FB56CD /* ChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotApp.swift; sourceTree = "<group>"; };
 		4B951DE72C005A0D00FB56CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B05D22A2C084AF900CA4ED6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B05D22B2C084B0C00CA4ED6 /* ShimmerEffect.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4B951DD92C005A0D00FB56CD = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		4B951DF42C005C3F00FB56CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4B05D22A2C084AF900CA4ED6 /* ViewControllers */,
 				4B951DF52C005C4F00FB56CD /* ChatModle.swift */,
 				4B951DF72C005C6500FB56CD /* ChatView.swift */,
 				4B951DF92C005C8D00FB56CD /* ChatViewModel.swift */,
@@ -184,6 +195,7 @@
 				4B951E052C01B46B00FB56CD /* Utility.swift in Sources */,
 				4B951DFE2C005D1D00FB56CD /* API.swift in Sources */,
 				4B951DE62C005A0D00FB56CD /* ChatBotApp.swift in Sources */,
+				4B05D22C2C084B0C00CA4ED6 /* ShimmerEffect.swift in Sources */,
 				4B951E032C01B45900FB56CD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

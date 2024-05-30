@@ -14,14 +14,12 @@ class ChatViewModel:ObservableObject{
     @Published var isLoading=false
     @Published var errorMessage:String=""
     @Published var showingAlert:Bool=false
-    @Published var isThinking=false
     
     let model=GenerativeModel(name: "gemini-pro", apiKey: API.apiKey)
     @Published var message:String=""
     
     func sendMessage() async {
         self.isLoading=true
-        self.isThinking=true
         let cmodel=ChatModel(message: message, owener: .user)
         self.chatModel.append(cmodel)
         let assitantMessage=ChatModel(message: "", owener: .gpt)
@@ -33,7 +31,7 @@ class ChatViewModel:ObservableObject{
                     let text=lastMessage.message
                     if let newMessage=line.text{
                         message=""
-                        self.isThinking=false
+                        self.isLoading=false
                         let comingMessage=ChatModel(message: text+newMessage, owener: .gpt)
                         chatModel[chatModel.count-1]=comingMessage
                     }

@@ -32,6 +32,16 @@ struct ChatView: View {
                         chatBox(item)
                             .padding(5)
                     }
+                    if vm.isLoading{
+                        HStack{
+                            ShimmerEffect()
+                                .cornerRadius(5, corners: [.topRight, .bottomRight,.bottomLeft])
+                                .frame(width: UIScreen.screenWidth/2, height: 70)
+                                .offset(y:-60)
+                            Spacer(minLength: 30)
+                        }
+                  
+                    }
                     Color.clear
                         .frame(height: 1)
                         .id("bottom")
@@ -84,15 +94,14 @@ struct ChatView: View {
                     .cornerRadius(5, corners: [.topLeft,.topRight,.bottomLeft])
                     .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
             } else {
-                if vm.isThinking{
-                    
-                }
-                Text(model.localizedKey)
-                    .padding()
-                    .background(Color.assistantBackground)
-                    .cornerRadius(5, corners: [.topRight, .bottomRight,.bottomLeft])
-                    .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
-                Spacer(minLength: 30)
+                    Text(model.localizedKey)
+                        .padding()
+                        .background(Color.assistantBackground)
+                        .cornerRadius(5, corners: [.topRight, .bottomRight,.bottomLeft])
+                        .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
+                    Spacer(minLength: 30)
+                
+               
             }
         }
     }
@@ -101,6 +110,15 @@ struct ChatView: View {
 //#Preview {
 //    ChatView()
 //}
+//ShimmerEffect()
+//    .cornerRadius(5, corners: [.topRight, .bottomRight,.bottomLeft])
+//    .frame(width: UIScreen.screenWidth/2, height: 100)
+//Spacer(minLength: 30)
+extension UIScreen{
+   static let screenWidth = UIScreen.main.bounds.size.width
+   static let screenHeight = UIScreen.main.bounds.size.height
+   static let screenSize = UIScreen.main.bounds.size
+}
 
 
 
