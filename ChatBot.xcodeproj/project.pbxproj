@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B05D22C2C084B0C00CA4ED6 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B05D22B2C084B0C00CA4ED6 /* ShimmerEffect.swift */; };
+		4B4C42BB2C0C543700758F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C42BA2C0C543700758F48 /* LaunchScreen.storyboard */; };
 		4B951DE62C005A0D00FB56CD /* ChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DE52C005A0D00FB56CD /* ChatBotApp.swift */; };
 		4B951DE82C005A0D00FB56CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B951DE72C005A0D00FB56CD /* ContentView.swift */; };
 		4B951DEA2C005A0F00FB56CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B951DE92C005A0F00FB56CD /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		4B05D22B2C084B0C00CA4ED6 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		4B4C42B92C0C539700758F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B4C42BA2C0C543700758F48 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B951DE22C005A0D00FB56CD /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B951DE52C005A0D00FB56CD /* ChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotApp.swift; sourceTree = "<group>"; };
 		4B951DE72C005A0D00FB56CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		4B951DE42C005A0D00FB56CD /* ChatBot */ = {
 			isa = PBXGroup;
 			children = (
+				4B4C42B92C0C539700758F48 /* Info.plist */,
 				4B951DF42C005C3F00FB56CD /* Modules */,
 				4B951DE52C005A0D00FB56CD /* ChatBotApp.swift */,
 				4B951DE72C005A0D00FB56CD /* ContentView.swift */,
@@ -85,6 +89,7 @@
 				4B951DEB2C005A0F00FB56CD /* ChatBot.entitlements */,
 				4B951DEC2C005A0F00FB56CD /* Preview Content */,
 				4B951DFB2C005CF800FB56CD /* GenerateKey.plist */,
+				4B4C42BA2C0C543700758F48 /* LaunchScreen.storyboard */,
 			);
 			path = ChatBot;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B951DFC2C005CF800FB56CD /* GenerateKey.plist in Resources */,
+				4B4C42BB2C0C543700758F48 /* LaunchScreen.storyboard in Resources */,
 				4B951DEE2C005A0F00FB56CD /* Preview Assets.xcassets in Resources */,
 				4B951DEA2C005A0F00FB56CD /* Assets.xcassets in Resources */,
 			);
@@ -330,12 +336,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatBot/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -368,12 +376,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatBot/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

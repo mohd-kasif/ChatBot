@@ -89,7 +89,7 @@ struct ChatView: View {
                 Spacer()
                 Text(model.localizedKey)
                     .padding()
-                    .background(.blue)
+                    .background(.green)
                     .foregroundColor(.white)
                     .cornerRadius(5, corners: [.topLeft,.topRight,.bottomLeft])
                     .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
